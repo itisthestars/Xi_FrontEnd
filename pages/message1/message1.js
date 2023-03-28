@@ -23,7 +23,6 @@ Page({
 
   getlist() {
     let url=app.globalData.url+'/articles/category/'
-    
     wx.request({
       url: url,
       success: (result) => {

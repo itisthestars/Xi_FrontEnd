@@ -24,7 +24,7 @@ Page({
         // 发送 res.code 到后台换取 openId , sessionKey, unionId
         let url=app.globalData.url+'/wechat/login/'
         wx.request({
-          url: 'url', //后端路径
+          url:url, //后端路径
           //  把code发送到后端
           data: {
             "code": res.code,
@@ -54,7 +54,7 @@ Page({
       success: (res) => {
         console.log(res)
         wx.request({
-          url: 'url',
+          url:url,
           method: "POST",
           data: {
             "encryptedData": res.encryptedData,

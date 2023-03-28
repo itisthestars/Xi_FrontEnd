@@ -28,7 +28,6 @@ Page({
   // 轮播图数据请求
   getlist() {
     let url=app.globalData.url+'/this./header/headinfo/'
-    console.log(url)
     wx.request({
       url:url, //后端路径
       success: (res) => {
@@ -41,7 +40,6 @@ Page({
   // 一句话数据请求
   getdatalist() {
     let url=app.globalData.url+'/header/sentenceinfo/'
-    console.log(url)
     wx.request({
       url:url,
       success: (re) => {

@@ -1,4 +1,5 @@
 // pages/content/content.js
+const app=getApp()
 Page({
 
   /**
@@ -22,8 +23,9 @@ Page({
   },
   // 发起请求
   getcontent() {
+    let url=app.globalData.url+'/articles/getarticle/'
     wx.request({
-      url: 'http://10.32.116.196:8000/articles/getarticle/',
+      url:url,
       data: {
         cat_a_id: this.parameter.cat_a_id,
         cat_b_id: this.parameter.cat_b_id
