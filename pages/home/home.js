@@ -134,6 +134,7 @@ Page({
   else{
     wx.showToast({
       title: '请先登录',
+      icon:'error'
     })
   }
 

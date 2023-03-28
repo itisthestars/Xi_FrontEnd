@@ -18,6 +18,9 @@
 <!--  -->
 <!-- 一句话 -->
 <view class="big2">
+<!-- <view class="deng">
+  <image src="/images/deng.png" mode="widthFix"/>
+</view> -->
 <view class="partbig2">
 <view class="part2title">
   <image src="/images/xingxing.png" mode="widthFix" />
