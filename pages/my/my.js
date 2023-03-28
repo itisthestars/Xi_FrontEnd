@@ -1,4 +1,4 @@
-// pages/login1/login1.js
+const app=getApp()
 Page({
 
   /**
@@ -22,8 +22,9 @@ Page({
     wx.login({
       success: (res) => {
         // 发送 res.code 到后台换取 openId , sessionKey, unionId
+        let url=app.globalData.url+'/wechat/login/'
         wx.request({
-          url: 'http://10.32.116.196:8000/wechat/login/', //后端路径
+          url: 'url', //后端路径
           //  把code发送到后端
           data: {
             "code": res.code,
@@ -44,6 +45,7 @@ Page({
 
   //授权登录的方法
   login() {
+    let url=app.globalData.url+'/wechat/confirm/'
     //微信申请接口
     wx.getUserProfile({
       // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
@@ -52,7 +54,7 @@ Page({
       success: (res) => {
         console.log(res)
         wx.request({
-          url: 'http://10.32.116.196:8000/wechat/confirm/',
+          url: 'url',
           method: "POST",
           data: {
             "encryptedData": res.encryptedData,

@@ -11,7 +11,7 @@
   <scroll-view scroll-y="true" class="right">
 <view wx:for="{{rightlist}}" wx:for-item="item1" class="rightcontent">
   <view>
-   <navigator url="/pages/contention/contention?id1={{leftindex}}&id2={{item1.cat_b_id}}"> {{item1.cat_b_title}}</navigator>
+   <navigator url="/pages/contention/contention?id1={{leftindex}}&id2={{item1.id}}"> {{item1.title}}</navigator>
   </view>
   <!-- <view wx:for="{{item1.cat_b_info}}" wx:for-item="item2">
     {{item2.cat_c_title}}

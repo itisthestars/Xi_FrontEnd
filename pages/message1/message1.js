@@ -1,3 +1,4 @@
+const app=getApp()
 Page({
 
   /**
@@ -9,6 +10,7 @@ Page({
     leftindex: 0,
     scrolltop: 0,
     cates: [],
+    url:''
   },
 
   /**
@@ -16,12 +18,14 @@ Page({
    */
   onLoad: function (options) {
     this.getlist()
-
+    
   },
 
   getlist() {
+    let url=app.globalData.url+'/articles/category/'
+    
     wx.request({
-      url: 'http://10.32.116.196:8000/articles/category/',
+      url: url,
       success: (result) => {
         console.log(result)
         this.setData({
@@ -30,7 +34,7 @@ Page({
 
 
         let leftlist = this.data.cates.map(v => v.cat_a_title);
-        let rightlist = this.data.cates[0].cat_a_info;
+        let rightlist = this.data.cates[0].cat_b_title;
         this.setData({
           leftlist,
           rightlist
@@ -40,7 +44,7 @@ Page({
   },
   handlist(e) {
 
-    let rightlist = this.data.cates[e.currentTarget.dataset.inde].cat_a_info;
+    let rightlist = this.data.cates[e.currentTarget.dataset.inde].cat_b_title;
     this.setData({
       rightlist,
       leftindex: e.currentTarget.dataset.inde,

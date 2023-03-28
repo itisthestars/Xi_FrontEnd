@@ -14,7 +14,6 @@ Page({
     random: '',
     checked: false,
     collectimage: '/images/collect.png',
-    url:''
   },
 
   /**
@@ -28,10 +27,10 @@ Page({
   },
   // 轮播图数据请求
   getlist() {
-    let url=app.globalData.url+'this./header/headinfo/'
+    let url=app.globalData.url+'/this./header/headinfo/'
     console.log(url)
     wx.request({
-      url: 'url', //后端路径
+      url:url, //后端路径
       success: (res) => {
         this.setData({
           swiperlist: res.data.message
@@ -41,8 +40,10 @@ Page({
   },
   // 一句话数据请求
   getdatalist() {
+    let url=app.globalData.url+'/header/sentenceinfo/'
+    console.log(url)
     wx.request({
-      url: 'http://10.32.116.196:8000/header/sentenceinfo/',
+      url:url,
       success: (re) => {
         this.setData({
           datalist: re.data,
