@@ -27,12 +27,12 @@ Page({
   },
   // 轮播图数据请求
   getlist() {
-    let url=app.globalData.url+'/this./header/headinfo/'
+    let url=app.globalData.url+'/header/headinfo/'
     wx.request({
       url:url, //后端路径
       success: (res) => {
         this.setData({
-          swiperlist: res.data.message
+          swiperlist: res.data
         })
       }
     })
@@ -40,6 +40,7 @@ Page({
   // 一句话数据请求
   getdatalist() {
     let url=app.globalData.url+'/header/sentenceinfo/'
+    console.log(url)
     wx.request({
       url:url,
       success: (re) => {
@@ -82,6 +83,7 @@ Page({
   },
   // 点击收藏功能
   handadd() {
+    if(wx.getStorageSync('localUserInfo')!=''){
     // 1获取缓存中的购物车数组
     let collect = wx.getStorageSync('collect') || [];
     // let cart=wx.getStorageSync("cart")||[];
@@ -126,18 +128,17 @@ Page({
         title: '取消成功',
 
       })
+    
     }
-
-
-  },
-  tiaozhuan() {
-    wx.navigateToMiniProgram({
-      appId: 'wxc32aa468714ea8ca',
-      path: '',
-
-
+  }
+  else{
+    wx.showToast({
+      title: '请先登录',
     })
+  }
+
   },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

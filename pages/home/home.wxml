@@ -1,12 +1,23 @@
 <!-- 轮播图 -->
 <swiper indicator-dots="true" indicator-color="#000000" indicator-active-color="#ff0000" autoplay="true" interval="3000" circular="true">
-  <swiper-item wx:for="{{swiperlist}}" wx:key="goods_id">
-    <navigator url="/pages/swiperlist/swiperlist?swiperlistid={{item.goods_id}}">
-      <image src="{{item.image_src}}" mode="widthFix" />
+  <swiper-item wx:for="{{swiperlist}}" wx:key="rank">
+    <navigator url="/pages/swiperlist/swiperlist?rank={{item.rank}}">
+      <image src="{{item.img_src}}" mode="" />
+      <view class="swipertitle">
+      {{item.title}}
+    </view>
     </navigator>
+   
   </swiper-item>
 </swiper>
+
+<!--  -->
+<view class="part1-2">
+  
+</view>
+<!--  -->
 <!-- 一句话 -->
+<view class="big2">
 <view class="partbig2">
 <view class="part2title">
   <image src="/images/xingxing.png" mode="widthFix" />
@@ -25,6 +36,7 @@
     </view>
   </view>
   <view class="title">——{{ currentdata.content }} </view>
+</view>
 </view>
 </view>
 <!-- <view class="part3" bindtap="tiaozhuan"> 

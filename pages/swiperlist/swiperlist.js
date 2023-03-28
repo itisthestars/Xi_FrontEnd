@@ -1,20 +1,39 @@
 // pages/swiperlist/swiperlist.js
+const app=getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+content:[]
   },
-
+param:{
+rank:''
+},
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+this.param.rank=options.rank
+this.getdata()
   },
-
+  // 
+getdata(){
+  let url=app.globalData.url+'/header/newsinfo/'
+wx.request({
+  url:url,
+  data: {
+    rank: this.param.rank,
+  },
+  success:(res)=>{
+console.log(res)
+this.setData({
+  content:res.data
+})
+  }
+})
+},
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

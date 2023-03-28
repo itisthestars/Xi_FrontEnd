@@ -1,22 +1,49 @@
 page {
-  background-color:white;
+  background-color: white;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  /* background-image: url(https://itisthestar.oss-cn-hangzhou.aliyuncs.com/background10.png);
+  background-position-y:0rpx;
+  background-size:100vw 200rpx; */
 }
 
 swiper {
   height: 400rpx;
   width: 100vw;
-  line-height: 30rpx;
+  line-height: 170rpx;
   margin: auto;
-  
+
 }
 
 swiper-item navigator image {
   width: 100vw;
-  border-radius: 100rpx;
+  height: 400rpx;
+  border-radius: 0rpx;
+  position: absolute;
+  z-index: 888;
 
+}
+
+swiper-item navigator {
+  position: relative;
+  height: 400rpx;
+  width: 100vw;
+}
+
+.swipertitle {
+  color: white;
+  width: 100vw;
+  position: absolute;
+  z-index: 999;
+  text-align: center;
+  border: 1rpx solid transparent;
+  height: fit-content;
+  line-height: 50rpx;
+  bottom: 0rpx;
+  font-weight: 600;
+  font-size: 35rpx;
+  background-color: rgba(255, 0, 0, 0.5);
 }
 
 /* .part2{
@@ -25,14 +52,16 @@ swiper-item navigator image {
   display: flex;
  
 } */
-.partbig2{
+.partbig2 {
   border: 8rpx solid rgb(251, 255, 27);
   width: 93vw;
-margin: auto;
-margin-top: 70rpx;
-border-radius: 50rpx;
-background-color: red;
+  margin: auto;
+  margin-top: 150rpx;
+  border-radius: 50rpx;
+  background-color: red;
+  
 }
+
 .part2title {
   width: 90vw;
   height: 100rpx;
@@ -96,7 +125,7 @@ background-color: red;
   padding-right: 20rpx;
   line-height: 50rpx;
   padding-bottom: 50rpx;
- 
+
 }
 
 .part2-2 {
@@ -128,4 +157,17 @@ background-color: red;
 .part3 image {
   width: 100%;
   border-radius: 30rpx;
+}
+
+/* .part1-2{
+  height: 300rpx;
+  background-image: url(https://itisthestar.oss-cn-hangzhou.aliyuncs.com/background6.png);
+  background-size: 100vw 60vh;
+  background-position-y:-80rpx;
+} */
+.big2{
+  border: 1rpx solid transparent;
+  background-image: url(https://itisthestar.oss-cn-hangzhou.aliyuncs.com/background10.png);
+  background-position-y:-16rpx;
+  background-size:100vw 180rpx;
 }

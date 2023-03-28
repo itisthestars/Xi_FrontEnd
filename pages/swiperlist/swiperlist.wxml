@@ -1,2 +1,16 @@
-<!--pages/swiperlist/swiperlist.wxml-->
-<text>pages/swiperlist/swiperlist.wxml</text>
+
+<!-- <view class="part1">
+  <image src="/images/xingxing.png" mode="widthFix"/>
+</view> -->
+<view class="content part1">
+
+<image src="/images/xingxing.png" mode="widthFix"/>
+
+<view class="title">
+  {{content.title}}
+</view>
+<view class="info">
+  {{content.content.body}}
+</view>
+
+</view>

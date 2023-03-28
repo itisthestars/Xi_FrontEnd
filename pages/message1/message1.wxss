@@ -29,13 +29,13 @@ page {
 .left {
   height: 1000px;
   width: 38vw;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .right {
   height: 1000px;
   width: 62vw;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .left view {

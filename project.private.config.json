@@ -91,6 +91,13 @@
           "query": "id=87",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/swiperlist/swiperlist",
+          "query": "rank=1",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }
