@@ -1,0 +1,71 @@
+page{
+/* background-image: linear-gradient(red,white); */
+background-image: url(https://itisthestar.oss-cn-hangzhou.aliyuncs.com/background3.png);
+background-position: -100rpx  0rpx;
+height: 2000rpx;
+background-attachment: fixed;
+}
+.top{
+  height: 100rpx;
+  width: 50vw;
+  margin: auto;
+  margin-top: 60rpx;
+  margin-bottom: 150rpx;
+  text-align: center;
+  font-size: 40rpx;
+  line-height: 100rpx;
+  font-weight: 800;
+ letter-spacing: 30rpx;
+ background-color:rgba(255,255, 255, 0.8);
+ color: red;
+ border-radius: 50rpx;
+  
+}
+.part1 {
+  height: fit-content;
+  width: 80vw;
+  margin: auto;
+  background-color:white;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40rpx;
+  border-radius: 50rpx;
+  background-image: url(https://itisthestar.oss-cn-hangzhou.aliyuncs.com/123.jpg);
+  line-height: 60rpx;
+  text-indent: 2rem;
+  font-size:40rpx;
+  font-weight: 800;
+  padding-top: 20rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+
+.delete {
+  height: 80rpx;
+  width: 80vw;
+display: flex;
+flex-direction: row-reverse;
+right: 30rpx;
+}
+
+.delete image {
+  height: 80rpx;
+  width: 80rpx;
+  margin-right: 40rpx;
+  
+}
+/* .info{
+  width: fit-content;
+  margin-top: 10rpx;
+  height: fit-content;
+  line-height: 60rpx;
+  text-indent: 2rem;
+  font-size:40rpx;
+  font-weight: 800;
+  padding-top: 20rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+} */
+.title{
+padding-left: 20rpx;
+}

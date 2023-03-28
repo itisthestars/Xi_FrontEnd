@@ -1,0 +1,131 @@
+page {
+  background-color:white;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+swiper {
+  height: 400rpx;
+  width: 100vw;
+  line-height: 30rpx;
+  margin: auto;
+  
+}
+
+swiper-item navigator image {
+  width: 100vw;
+  border-radius: 100rpx;
+
+}
+
+/* .part2{
+  height: fit-content;
+  width: 96vw;
+  display: flex;
+ 
+} */
+.partbig2{
+  border: 8rpx solid rgb(251, 255, 27);
+  width: 93vw;
+margin: auto;
+margin-top: 70rpx;
+border-radius: 50rpx;
+background-color: red;
+}
+.part2title {
+  width: 90vw;
+  height: 100rpx;
+  margin: auto;
+  line-height: 100rpx;
+  text-align: center;
+  color: red;
+  font-size: 40rpx;
+  font-weight: 800;
+  margin-top: 10rpx;
+  border: 2px solid red;
+  background-color: whitesmoke;
+  border-top-left-radius: 50rpx;
+  border-top-right-radius: 50rpx;
+  background-image: url(https://itisthestar.oss-cn-hangzhou.aliyuncs.com/123.jpg);
+  background-size: 100vw 60vh;
+  background-position: center;
+}
+
+.part2title image {
+  width: 30rpx;
+}
+
+.part2 {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  height: fit-content;
+  margin: auto;
+  background-color: white;
+  border: 2px solid red;
+  border-radius: 50rpx;
+  border-top-left-radius: 0rpx;
+  border-top-right-radius: 0rpx;
+  /* box-shadow: 0rpx 3rpx 10rpx 10rpx white; */
+  background-image: url(https://itisthestar.oss-cn-hangzhou.aliyuncs.com/123.jpg);
+  background-size: 100vw 60vh;
+  background-position: center;
+}
+
+.info {
+  margin-top: 30rpx;
+  height: fit-content;
+  font-size: larger;
+  text-indent: 2rem;
+  font-weight: 900;
+  line-height: 60rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  padding-top: 30rpx;
+  line-height: 70rpx;
+}
+
+.title {
+  height: fit-content;
+  text-indent: 2rem;
+  font-size: medium;
+  font-weight: 400;
+  padding-top: 20rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  line-height: 50rpx;
+  padding-bottom: 50rpx;
+ 
+}
+
+.part2-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  border-bottom: 2px dashed red;
+}
+
+.nav1,
+.nav2 {
+  width: 100rpx;
+
+}
+
+.nav1 image,
+.nav2 image {
+  width: 80rpx;
+
+}
+
+.part3 {
+  width: 90vw;
+  margin: auto;
+  margin-top: 50rpx;
+  text-align: center;
+  background-color: red;
+}
+
+.part3 image {
+  width: 100%;
+  border-radius: 30rpx;
+}

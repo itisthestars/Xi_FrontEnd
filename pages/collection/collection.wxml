@@ -1,0 +1,15 @@
+<view class="top">
+  我的收藏
+</view>
+<view wx:for="{{collection}}" class="part1">
+<navigator  url="/pages/collectdetail/collectdetail?id={{item.id}}">{{item.title}}</navigator>
+   
+  
+  
+ <!-- <button type="primary" bindtap="handdelete" data-id="{{item.id}}"> 点击删除</button> -->
+ <view class="delete" bindtap="handdelete" data-id="{{item.id}}">
+ <view>
+   <image src="/images/iscollect.png" mode=""/>
+  </view>
+ </view>
+</view>

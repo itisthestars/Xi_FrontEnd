@@ -1,0 +1,10 @@
+<!-- <view class="part1">
+  <image src="/images/xingxing.png" mode="widthFix"/>
+</view> -->
+<view class="content part1">
+
+  <image src="/images/xingxing.png" mode="widthFix"/>
+
+
+  {{content}}
+</view>

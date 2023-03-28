@@ -1,0 +1,21 @@
+<view class="box">
+  <!-- scroll-view标签在使用时，可以当做普通的view标签使用，可以设置很多属性改变XY轴滚动 -->
+  <!-- 左侧滚动栏 -->
+  <!-- view{$}*100可以一次打印1-100内容的view标签 -->
+  <scroll-view scroll-y="true" class="left">
+<view class="leftcontent" wx:for="{{leftlist}}" class="{{index===leftindex? 'active' : ''}}" bindtap="handlist" data-inde="{{index}}">
+  {{item}}
+</view>
+  </scroll-view>
+  <!-- 右侧滚动栏 -->
+  <scroll-view scroll-y="true" class="right">
+<view wx:for="{{rightlist}}" wx:for-item="item1" class="rightcontent">
+  <view>
+   <navigator url="/pages/contention/contention?id1={{leftindex}}&id2={{item1.cat_b_id}}"> {{item1.cat_b_title}}</navigator>
+  </view>
+  <!-- <view wx:for="{{item1.cat_b_info}}" wx:for-item="item2">
+    {{item2.cat_c_title}}
+  </view> -->
+</view>
+  </scroll-view>
+</view>

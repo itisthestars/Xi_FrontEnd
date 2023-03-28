@@ -1,0 +1,27 @@
+<!-- pages/login/login.wxml -->
+<view class="part1">
+<view class="door">
+  <view wx:if="{{userInfo}}" class="user">
+    <image class="avatar" src="{{userInfo.avatar_url}}" mode="widthFix"></image>
+    <view class="name">
+      {{userInfo.nickname}}
+    </view>
+  </view>
+</view>
+  <button  bindtap="login" wx:if="{{!userInfo}}" class="login">登录</button>
+  <button class="loginout" type="primary" bindtap="loginOut" wx:else>退出</button>
+</view>
+<!-- 收藏展示 -->
+<view class="part2">
+
+  <navigator url="/pages/collection/collection"> 
+  
+  <view>
+    <image  class="xingxing" src="/images/xingxing.png" mode="widthFix"/>
+    我的收藏
+  </view> <image class="arrow" src="/images/arrow.png" mode="widthFix"/>
+  </navigator>
+  <!-- <view class="arrow">
+    <image src="/images/arrow.png" mode="widthFix"/>
+  </view> -->
+</view>

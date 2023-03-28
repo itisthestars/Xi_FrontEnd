@@ -1,0 +1,51 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/my/my",
+    "pages/message1/message1",
+    "pages/message2/message2",
+    "pages/collection/collection",
+    "pages/contention/contention",
+    "pages/swiperlist/swiperlist",
+    "pages/collectdetail/collectdetail"
+
+    
+
+   
+  ],
+
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#ff0000",
+    "navigationBarTitleText": "习语近人",
+    "navigationBarTextStyle":"white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#ff0000",
+    "backgroundColor": "#ffffff",
+     "list": [
+      {
+       "pagePath": "pages/message1/message1",
+       "text": "习总文汇",
+       "iconPath": "/images/message0.png",
+       "selectedIconPath": "/images/message0active.png"
+     },
+      {
+      "pagePath": "pages/home/home",
+      "text": "习语金句",
+      "iconPath": "/images/home.png",
+      "selectedIconPath": "/images/homeactive.png"
+    },{
+       "pagePath": "pages/my/my",
+       "text": "我的",
+       "iconPath": "/images/message1.png",
+       "selectedIconPath": "/images/message1active.png"
+     }]
+   },
+   "navigateToMiniProgramAppIdList": [
+       "wxc32aa468714ea8ca"
+     ]
+}

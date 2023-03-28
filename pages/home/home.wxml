@@ -1,0 +1,32 @@
+<!-- 轮播图 -->
+<swiper indicator-dots="true" indicator-color="#000000" indicator-active-color="#ff0000" autoplay="true" interval="3000" circular="true">
+  <swiper-item wx:for="{{swiperlist}}" wx:key="goods_id">
+    <navigator url="/pages/swiperlist/swiperlist?swiperlistid={{item.goods_id}}">
+      <image src="{{item.image_src}}" mode="widthFix" />
+    </navigator>
+  </swiper-item>
+</swiper>
+<!-- 一句话 -->
+<view class="partbig2">
+<view class="part2title">
+  <image src="/images/xingxing.png" mode="widthFix" />
+  习语金句
+  <image src="/images/xingxing.png" mode="widthFix" />
+</view>
+<view class="part2">
+  <view class="info"> {{ currentdata.title }} </view>
+  <!-- 刷新 收藏按钮 -->
+  <view class="part2-2">
+    <view class="nav1" bindtap="handrefresh">
+      <image class="collimage" src="/images/refresh.png" mode="widthFix" />
+    </view>
+    <view class="nav2" bindtap="handadd">
+      <image class="collimage" src="{{collectimage}}" mode="widthFix" />
+    </view>
+  </view>
+  <view class="title">——{{ currentdata.content }} </view>
+</view>
+</view>
+<!-- <view class="part3" bindtap="tiaozhuan"> 
+  <image src="/images/nav.jpg" mode=" widthFix"/>
+</view> -->
