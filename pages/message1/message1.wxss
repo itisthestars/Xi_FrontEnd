@@ -45,9 +45,9 @@ page {
   margin-top: 20rpx;
   line-height: 40rpx;
   text-align: center;
-  border: 2px solid black;
+  border: 2px solid red;
   border-radius: 20rpx;
-  box-shadow: 1rpx 1rpx 3rpx 1rpx black;
+  box-shadow: 1rpx 1rpx 10rpx 4rpx red;
   font-size: 30rpx;
   font-weight: 800;
   padding-left: 20rpx;

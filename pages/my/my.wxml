@@ -2,9 +2,9 @@
 <view class="part1">
 <view class="door">
   <view wx:if="{{userInfo}}" class="user">
-    <image class="avatar" src="{{userInfo.avatar_url}}" mode="widthFix"></image>
+    <image class="avatar" src="{{userInfo.avatarUrl}}" mode="widthFix"></image>
     <view class="name">
-      {{userInfo.nickname}}
+      {{userInfo.nickName}}
     </view>
   </view>
 </view>

@@ -45,6 +45,10 @@ Page({
 
   //授权登录的方法
   login() {
+    
+     
+    
+    
     let url=app.globalData.url+'/wechat/confirm/'
     //微信申请接口
     wx.getUserProfile({
@@ -53,6 +57,10 @@ Page({
       //允许授权后，保存用户个人信息
       success: (res) => {
         console.log(res)
+        // wx.setStorageSync('localUserInfo', res.userInfo);
+        // this.setData({
+        //   userInfo:res.userInfo
+        // })
         wx.request({
           url:url,
           method: "POST",
@@ -79,6 +87,8 @@ Page({
         })
       }
     })
+  
+  
   },
   // 退出登录
   loginOut(){

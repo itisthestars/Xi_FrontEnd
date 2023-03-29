@@ -77,6 +77,7 @@ Page({
     // 弹窗提示
     wx.showToast({
       title: '刷新成功',
+      duration:300,
 
     })
 
@@ -108,7 +109,7 @@ Page({
       // 弹窗提示
       wx.showToast({
         title: '收藏成功',
-
+duration:300,
       })
     }
     // 再次点击取消收藏 发现本地存储中保存这个数据 
@@ -126,7 +127,7 @@ Page({
       // 弹窗提示
       wx.showToast({
         title: '取消成功',
-
+duration:300,
       })
     
     }
