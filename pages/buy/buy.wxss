@@ -1,0 +1,33 @@
+image{
+  width: 50vw;
+  /* border: 1px solid red; */
+}
+.box{
+  height: 130px;
+  margin-top: 20rpx;
+ border-bottom: 1px solid red;
+ display: flex;
+ border-radius: 10px;
+ box-shadow: 1rpx 1rpx 10rpx 4rpx red;
+}
+.name{
+width: 50vw;
+margin-top: 10rpx;
+margin-bottom: 10rpx;
+font-size: 30rpx;
+font-weight:600;
+}
+.price{
+  font-weight:600;
+}
+.handadd{
+  background-color: red;
+ height: 50px;
+ width: 100px;
+ line-height: 50px;
+ font-weight: 800;
+ text-align: center;
+ border-radius: 25rpx;
+ margin-top: 10rpx;
+
+}

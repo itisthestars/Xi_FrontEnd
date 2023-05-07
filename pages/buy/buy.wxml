@@ -1,0 +1,14 @@
+<view class="box" wx:for="{{object}}">
+  <image src="{{item.src}}" mode="widthFix" />
+  <view class="box1">
+    <view class="name">
+    书名：{{item.name}}
+  </view>
+  <view class="price">
+    ¥：{{item.price}}
+  </view>
+  <view class="handadd" bindtap="handadd" data-id="{{item.id}}">
+    加入购物车
+  </view>
+  </view>
+</view>

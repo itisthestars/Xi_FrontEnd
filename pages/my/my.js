@@ -12,7 +12,7 @@ Page({
    */
   onLoad(options) {
 
-     //检测本地是否还保存着登录状态时的个人信息，可直接免登录
+    //  检测本地是否还保存着登录状态时的个人信息，可直接免登录
      if(wx.getStorageSync('localUserInfo')!=''){
       this.setData({
         userInfo: wx.getStorageSync('localUserInfo')
@@ -41,55 +41,57 @@ Page({
 
 
   // 获取个人信息
-
+login(){
+  wx.navigateTo({
+    url: '/pages/mylogin/mylogin',
+  })
+},
 
   //授权登录的方法
-  login() {
+  // login() {
     
-     
-    
-    
-    let url=app.globalData.url+'/wechat/confirm/'
-    //微信申请接口
-    wx.getUserProfile({
-      // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
-      desc: '必须授权才可以继续使用',
-      //允许授权后，保存用户个人信息
-      success: (res) => {
-        console.log(res)
-        // wx.setStorageSync('localUserInfo', res.userInfo);
-        // this.setData({
-        //   userInfo:res.userInfo
-        // })
-        wx.request({
-          url:url,
-          method: "POST",
-          data: {
-            "encryptedData": res.encryptedData,
-            "iv": res.iv,
-            "login_key": wx.getStorageSync("login_key")
-          },
+  //   let url=app.globalData.url+'/wechat/confirm/'
+  //   //微信申请接口
+  //   wx.getUserProfile({
+  //     // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
+  //     desc: '必须授权才可以继续使用',
+  //     //允许授权后，保存用户个人信息
+  //     success: (res) => {
+  // console.log(res)
+  //       // wx.setStorageSync('localUserInfo', res.userInfo);
+  //       // this.setData({
+  //       //   userInfo:res.userInfo
+  //       // })
+  //       wx.request({
+  //         url:url,
+  //         method: "POST",
+  //         data: {
+  //           "encryptedData": res.encryptedData,
+  //           "iv": res.iv,
+  //           "login_key": wx.getStorageSync("login_key")
+  //         },
 
-          success: (res) => {
-            wx.setStorageSync('localUserInfo', res.data.data);
-            this.setData({
-              userInfo: res.data.data
-            })
-          }
-        })
+  //         success: (res) => {
+  //           console.log(res)
+  //           wx.setStorageSync('localUserInfo', res.data.data);
+  //           this.setData({
+  //             userInfo: res.data.data
+  //           })
+  //         }
+  //       })
 
-      },
-      //拒绝授权后的提示
-      fail(res) {
-        wx.showModal({
-          title: '提示',
-          content: '必须授权才可以继续使用'
-        })
-      }
-    })
+  //     },
+  //     //拒绝授权后的提示
+  //     fail(res) {
+  //       wx.showModal({
+  //         title: '提示',
+  //         content: '必须授权才可以继续使用'
+  //       })
+  //     }
+  //   })
   
   
-  },
+  // },
   // 退出登录
   loginOut(){
     this.setData({
@@ -104,14 +106,18 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady() {
-
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow() {
-
+   console.log('oookkk')
+  //  if(wx.getStorageSync('localUserInfo')!=''){
+  //   this.setData({
+  //     userInfo: wx.getStorageSync('localUserInfo')
+  //   })
+  // }
   },
 
   /**

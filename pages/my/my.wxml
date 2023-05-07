@@ -2,9 +2,9 @@
 <view class="part1">
 <view class="door">
   <view wx:if="{{userInfo}}" class="user">
-    <image class="avatar" src="{{userInfo.avatarUrl}}" mode="widthFix"></image>
+    <image class="avatar" src="{{userInfo.avatarurl}}" mode="widthFix"></image>
     <view class="name">
-      {{userInfo.nickName}}
+      {{userInfo.username}}
     </view>
   </view>
 </view>
@@ -19,6 +19,13 @@
   <view>
     <image  class="xingxing" src="/images/xingxing.png" mode="widthFix"/>
     我的收藏
+  </view> <image class="arrow" src="/images/arrow.png" mode="widthFix"/>
+  </navigator>
+  <navigator url="/pages/buycart/buycart"> 
+  
+  <view>
+    <image  class="xingxing" src="/images/xingxing.png" mode="widthFix"/>
+    购物车
   </view> <image class="arrow" src="/images/arrow.png" mode="widthFix"/>
   </navigator>
   <!-- <view class="arrow">

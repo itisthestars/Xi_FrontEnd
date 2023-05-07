@@ -1,0 +1,37 @@
+/* pages/buycartdetail/buycartdetail.wxss */
+button{
+  height: 100rpx;
+  line-height: 100%;
+}
+.ad{
+  width: 80vw;
+  background-color: aqua;
+  margin-top: 20px;
+  text-align: center;
+  margin: auto;
+}
+.bot{
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: bisque;
+}
+.contentitem{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: space-around;
+
+}
+navigator {
+  width: 400rpx;
+}
+navigator image{
+  width: 400rpx;
+}
+.pay{
+  background-color: red;
+}

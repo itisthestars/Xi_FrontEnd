@@ -1,4 +1,5 @@
 // pages/text/text.js
+// 通过const app = getApp()实现在page页面获取app.js从而获取app.js中定义的全局数据globalData
 const app=getApp();
 Page({
 

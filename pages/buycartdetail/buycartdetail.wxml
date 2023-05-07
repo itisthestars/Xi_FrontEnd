@@ -1,0 +1,33 @@
+
+<!-- 购物车内容 -->
+<block wx:if="{{newcart.length!=0}}">
+  <view class="content" wx:for="{{newcart}}" wx:key="goods_id">
+    <view class="contentitem">
+      <!-- 商品图片 -->
+      <navigator url="">
+        <image src="{{item.src}}" mode="widthFix" />
+      </navigator>
+      <!-- 价格 -->
+      <view>
+        ${{item.price}}
+      </view>
+
+
+    </view>
+  </view>
+</block>
+<block wx:else>
+  <view>
+    当前购物车为空
+  </view>
+</block>
+
+<!-- 底部栏 -->
+<view class="bot">
+  <view class="pay" bindtap="settlement">
+    结算：{{totalnum}}
+  </view>
+  <view>
+    总价：{{totalprice}}
+  </view>
+</view>

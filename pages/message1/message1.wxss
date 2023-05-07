@@ -42,7 +42,7 @@ page {
   height: fit-content;
   width: 75%;
   margin: auto;
-  margin-top: 20rpx;
+  margin-top: 30rpx;
   line-height: 40rpx;
   text-align: center;
   border: 2px solid red;

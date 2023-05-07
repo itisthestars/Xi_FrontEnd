@@ -1,0 +1,86 @@
+
+
+.content{
+  box-shadow: 10px ;
+  border: 1px solid red;
+  border-radius: 20px;
+  margin-top: 20px;
+  box-shadow: 1rpx 1rpx 10rpx 4rpx red;
+}
+.contentitem{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: space-around;
+
+}
+.check{
+  margin-top: 40px;
+}
+
+.price{
+  font-weight: 600;
+
+}
+.edit{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.jiajian{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+font-weight: 600;
+}
+.jiajian view{
+margin-right: 10px;
+}
+navigator {
+  width: 400rpx;
+}
+navigator image{
+  width: 400rpx;
+}
+.pay{
+  background-color: red;
+  font-size: 40rpx;
+  height: 80rpx;
+  width: 200rpx;
+  text-align: center;
+  line-height: 80rpx;
+  border-radius: 50rpx;
+  margin-top:10rpx;
+}
+.totalprice{
+  
+  font-size: 40rpx;
+  height: 80rpx;
+  width: 200rpx;
+  text-align: center;
+  line-height: 80rpx;
+  border-radius: 50rpx;
+  margin-top:10rpx;
+}
+.bot{
+  width: 100vw;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: bisque;
+  
+}
+button{
+  height: 100rpx;
+  line-height: 100%;
+}
+.ad{
+  width: 80vw;
+  background-color: aqua;
+  margin-top: 20px;
+  text-align: center;
+  margin: auto;
+}

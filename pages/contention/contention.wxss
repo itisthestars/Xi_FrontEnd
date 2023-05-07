@@ -9,7 +9,7 @@ page{
 
 
 
-.part1 image{
+/* .part1 image{
   position: absolute;
   width: 80rpx;
 top: 20rpx;
@@ -17,7 +17,7 @@ left: 50%;
 margin-left: -40rpx;
 bottom: 30rpx;
 
-}
+} */
 .content{
   position: relative;
   margin: auto;

@@ -7,7 +7,13 @@
     "pages/collection/collection",
     "pages/contention/contention",
     "pages/swiperlist/swiperlist",
-    "pages/collectdetail/collectdetail"
+    "pages/collectdetail/collectdetail",
+    "pages/mylogin/mylogin",
+    "pages/buy/buy",
+    "pages/buycart/buycart",
+    "pages/buycartdetail/buycartdetail"
+
+
 
     
 
@@ -26,6 +32,7 @@
     "color": "#000000",
     "selectedColor": "#ff0000",
     "backgroundColor": "#ffffff",
+    
      "list": [
       {
        "pagePath": "pages/message1/message1",
@@ -38,6 +45,11 @@
       "text": "习语金句",
       "iconPath": "/images/home.png",
       "selectedIconPath": "/images/homeactive.png"
+    },{
+      "pagePath": "pages/buy/buy",
+      "text": "商城",
+      "iconPath": "/images/buy.png",
+      "selectedIconPath": "/images/buyactive.png"
     },{
        "pagePath": "pages/my/my",
        "text": "我的",
