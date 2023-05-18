@@ -32,7 +32,7 @@
       <view  bindtap="handjiajian" data-id="{{item.id}}" data-operation="{{-1}}"> 
         -
       </view>
-      <view>
+      <view class="itemnum">
         {{item.num}}
       </view>
       <view  bindtap="handjiajian" data-id="{{item.id}}" data-operation="{{1}}">
@@ -45,8 +45,9 @@
 </view>
 </block>
 <block wx:else>
-  <view>
-    当前购物车为空
+  <view class="null">
+  当前购物车为空
+  请去选择购买
   </view>
 </block>
 

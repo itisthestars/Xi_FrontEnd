@@ -24,7 +24,7 @@
   <navigator url="/pages/buycart/buycart"> 
   
   <view>
-    <image  class="xingxing" src="/images/xingxing.png" mode="widthFix"/>
+    <image  class="xingxing" src="/images/buy.png" mode="widthFix"/>
     购物车
   </view> <image class="arrow" src="/images/arrow.png" mode="widthFix"/>
   </navigator>
